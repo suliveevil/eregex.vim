@@ -1,4 +1,4 @@
-# eregex.vim
+# eregex.vim    [中文](./README_cn.md)
 
 ## Installation
 
