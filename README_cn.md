@@ -1,10 +1,12 @@
 # eregex.vim
 
-在 Vim 使用 Perl 风格的正则表达式
+在 Vim 中使用 Perl 风格的正则表达式
 
 ## 安装
 
-推荐使用 Vim 8 内置包管理系统，也可以通过第三方包管理工具安装。
+推荐使用 Vim 8 内置包管理系统和 Git 进行安装。
+
+也可以通过第三方包管理工具 vundle vim-plug dein 等进行安装。
 
 
 ## 快速开始
@@ -12,9 +14,11 @@
 ### 搜索
 
 安装之后，只需像往常一样按下 <kbd>/</kbd> 或 <kbd>?</kbd>。
+
 这两个键都将映射为 `:M/` 命令，此时你可以开始使用 PCRE 正则表达式来进行搜索。
 
 你可以通过调用 `eregex#toggle` 函数来开启或关闭本插件的键盘映射。
+
 你可以在你的`.vimrc` 中这样设置：
 
     nnoremap <leader>/ :call eregex#toggle()<CR>
