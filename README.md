@@ -1,4 +1,8 @@
-# eregex.vim    [中文](./README_cn.md)
+# eregex.vim
+
+Use perl style regular expression (PCRE) in Vim.
+
+[中文](./README_cn.md)
 
 ## Installation
 
@@ -10,9 +14,11 @@ It is recommended to install the script using [Vundle][] or [pathogen][].
 ## Quick Start
 
 After installation, just press <kbd>/</kbd> or <kbd>?</kbd> as usual.
+
 This will map to `:M/` command, which is used to perform the PCRE search.
 
-You can call `eregex#toggle` funtion to toggle the keymapping. For example, 
+You can call `eregex#toggle` funtion to toggle the keymapping. For example,
+
 add the following line into your `.vimrc` file:
 
     nnoremap <leader>/ :call eregex#toggle()<CR>
@@ -30,6 +36,7 @@ To disable the script by default, put this line in your `.vimrc` file:
     let g:eregex_default_enable = 0
 
 To change the search delimiter to something else than the default `/` and `?`,
+
 following options can be used:
 
     let g:eregex_forward_delim = '/'
